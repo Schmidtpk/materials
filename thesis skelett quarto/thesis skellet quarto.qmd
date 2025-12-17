@@ -1,0 +1,63 @@
+---
+title: "Titel der Seminararbeit"
+subtitle: "Seminar: Name des Seminars (WiSe 2025/26)"
+author: "Ihr Name (Matrikelnr: 1234567)"
+date: today
+date-format: "D. MMMM YYYY"
+lang: de
+fontsize: 12pt
+# Layout & Formatierung
+geometry:
+  - top=25mm
+  - left=25mm
+  - right=25mm
+  - bottom=25mm
+linestretch: 1.5
+# Schriftart (Times New Roman ähnlich)
+mainfont: "Times New Roman"
+# Ausgabe als PDF
+format:
+  pdf:
+    documentclass: scrartcl
+    number-sections: true
+    # Notwendige LaTeX-Pakete für Mathe & Grafiken
+    include-in-header:
+      text: |
+        \usepackage{amsmath}
+        \usepackage{float}
+bibliography: references.bib
+---
+
+\newpage
+\tableofcontents
+\newpage
+
+# Einleitung
+
+Hier steht die Einleitung. In der VWL nutzen wir oft Formeln:
+$$
+Y = C + I + G + NX
+$$
+
+Sowie Zitate. Dies ist ein Beispielzitat [@Keynes1936].
+
+# Anderes Kapitel
+
+## Unterkapitel
+
+Hier beginnt der Hauptteil.
+
+## Empirische Analyse
+
+Weitere Analysen.
+
+# Diskussion
+
+Zusammenfassung der Ergebnisse.
+
+\newpage
+# Literaturverzeichnis
+
+::: {#refs}
+:::
+
